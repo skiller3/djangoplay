@@ -1,0 +1,13 @@
+**/*~
+**/.idea
+**/__pycache__
+**/ghostdriver.log
+**/venv
+**/betterbeta.db
+**/#*#
+**/csvraw
+**/csvstore
+**/error_codes.js
+cert
+build
+localconfig.py
