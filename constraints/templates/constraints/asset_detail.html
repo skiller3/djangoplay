@@ -1,0 +1,15 @@
+{% extends "constraints/base.html" %}
+
+{% block content %}
+<p>Asset ID: {{asset.id}}</p>
+<p>Asset Symbol: {{asset.symbol}}</p>
+<p>Asset Name: {{asset.name}}</p>
+
+<form action="/constraints/update_asset/{{asset.symbol}}" method="post">
+  {% csrf_token %}
+  {{ form }}
+  <input type="submit" value="Submit"/>
+</form>
+{% endblock %}
+
+

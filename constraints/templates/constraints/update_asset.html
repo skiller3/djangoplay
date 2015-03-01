@@ -1,0 +1,5 @@
+<form action="/constraints/update_asset/{{symbol}}" method="post">
+  {% csrf_token %}
+  {% form %}
+  <input type="submit" value="Submit"/>
+</form>
